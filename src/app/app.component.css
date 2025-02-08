@@ -1,0 +1,28 @@
+nav {
+  background-color: var(--gray-900);
+  padding: 1rem;
+}
+
+nav a {
+  color: black;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  background-color: var(--gray-700);
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
