@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { GoogleAnalyticsService } from './services/google-analytics.service';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 export class AppComponent {
   title = 'celeste';
   usuarioLogado = false;
+
+  constructor(private googleAnalyticsService: GoogleAnalyticsService){}
 
   login(){
     this.usuarioLogado = true;
