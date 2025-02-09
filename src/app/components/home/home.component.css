@@ -1,16 +1,136 @@
-nav{
-  width: 100%;
-  height: 7rem;
-  background-color: var(--azul-escuro-celeste);
-}
-ul{
-  display: flex;
-}
-li{
-  list-style-type: none;
+main {
+  margin: 0;
+  height: max-content;
+  background-color: var(--azul-claro-celeste);
 }
 
-main{
-  background-color: var(--azul-claro-celeste);
-  height: 100dvh;
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border: 2px solid var(--vermelho-celeste);
+  width: 50%;
+}
+
+.banner {
+  position: relative;
+  padding-bottom: 167%;
+  background: #000 url("../../../assets/img/banner/background.jpg") no-repeat
+    center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.layer-dash {
+  background-image: url("../../../assets/img/banner/dash.png");
+}
+
+.layer-oshiro {
+  background-image: url("../../../assets/img/banner/oshiro.png");
+}
+
+.layer-granny {
+  background-image: url("../../../assets/img/banner/granny.png");
+}
+
+.layer-theo {
+  background-image: url("../../../assets/img/banner/theo.png");
+}
+
+.layer-badeline {
+  background-image: url("../../../assets/img/banner/badeline.png");
+}
+
+.layer-madeline {
+  background-image: url("../../../assets/img/banner/madeline.png");
+}
+
+.layer-logo {
+  background-image: url("../../../assets/img/banner/logo.png");
+}
+
+.layer-strawberry {
+  background-image: url("../../../assets/img/banner/strawberry.png");
+}
+
+.layer-clouds {
+  background-image: url("../../../assets/img/banner/clouds.png");
+}
+
+.layer-logo {
+  left: 7.5%;
+  right: 7.5%;
+  top: 0;
+  bottom: 15%;
+}
+
+.edge {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  height: 64px;
+  background: url("../../../assets/img/banner/edge.png") repeat-x;
+}
+
+.container-personagens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.personagens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+  width: 80%;
+}
+
+@media (min-width: 768px) {
+  .personagens {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .personagens {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .personagens {
+    width: 80%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .personagens {
+    width: 70%;
+  }
+}
+
+@media (min-width: 2400px) {
+  .personagens {
+    width: 55%;
+  }
+}
+@media (min-width: 3000px) {
+  .personagens {
+    width: 45%;
+  }
 }
