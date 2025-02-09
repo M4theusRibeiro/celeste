@@ -1,0 +1,31 @@
+.container-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  width: 25rem;
+  background-color: transparent;
+  border: 2px solid black;
+  border-bottom: 1rem solid black;
+  border-radius: 2px;
+  margin: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.container-card:hover {
+  border-color: var(--vermelho-celeste);
+  transform: scale(1.1);
+}
+
+.foto-personagem {
+  border-radius: 2px;
+}
+.nome-personagem {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.Madeline {
+  color: var(--vermelho-celeste);
+}
