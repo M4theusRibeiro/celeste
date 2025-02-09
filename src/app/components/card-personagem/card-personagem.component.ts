@@ -1,5 +1,6 @@
 import { Component, Input, input } from '@angular/core';
 import { Personagem } from '../../models/Personagem';
+import { GoogleAnalyticsService } from '../../services/google-analytics.service';
 
 @Component({
   selector: 'app-card-personagem',
@@ -11,8 +12,10 @@ export class CardPersonagemComponent {
   @Input() personagem!: Personagem;
   verSobre: boolean = false;
 
+  constructor(private googleAnalyticsService: GoogleAnalyticsService){}
+
   verSobrePersonagem() {
-    console.log(this.verSobre);
     this.verSobre = !this.verSobre;
+    this.googleAnalyticsService.eventEmitter('Clicando no personagem', 'button_click', 'Clicando no personagem', 'Example Button', 0);
   }
 }

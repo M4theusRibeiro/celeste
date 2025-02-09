@@ -18,4 +18,14 @@ export class GoogleAnalyticsService {
       });
     });
   }
+
+  // Método para enviar eventos personalizados
+  public eventEmitter(eventName: string, eventCategory: string, eventAction: string, eventLabel: string, eventValue: number) {
+    gtag('event', eventName, {
+      event_category: eventCategory,
+      event_action: eventAction,
+      event_label: eventLabel,
+      value: eventValue
+    });
+  }
 }
