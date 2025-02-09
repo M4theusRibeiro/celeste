@@ -1,0 +1,31 @@
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  background-color: var(--azul-escuro-celeste);
+}
+
+ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20rem;
+}
+
+li{
+  list-style-type: none;
+  color: white;
+}
+
+.morango{
+  width: 3.5rem;
+  height: 3.5rem;
+  transition: transform 0.3s ease;
+}
+
+.morango:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
