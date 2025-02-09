@@ -1,8 +1,18 @@
-@if(personagem){
-<div class="container-card">
-  <div class="foto-personagem">
+<!-- @if(!verSobre){ -->
+<div class="container-card" (click)="verSobrePersonagem()">
+  <div class="foto-personagem ">
     <img src="{{ personagem.imagem }}" alt="" />
   </div>
   <div class="nome-personagem {{ personagem.nome }}">{{ personagem.nome }}</div>
 </div>
-}
+<!-- } -->
+<!-- @else{
+  <div class="container-card card-grande container" (click)="verSobrePersonagem()">
+    <div class="personagem-container">
+      <div class="foto-personagem ">
+        <img src="{{ personagem.imagem }}" alt="" />
+      </div>
+      <div class="nome-personagem {{ personagem.nome }}">{{ personagem.nome }}</div>
+    </div>
+  </div>
+} -->

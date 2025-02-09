@@ -9,7 +9,10 @@ import { Personagem } from '../../models/Personagem';
 })
 export class CardPersonagemComponent {
   @Input() personagem!: Personagem;
+  verSobre: boolean = false;
 
-
-
+  verSobrePersonagem() {
+    console.log(this.verSobre);
+    this.verSobre = !this.verSobre;
+  }
 }

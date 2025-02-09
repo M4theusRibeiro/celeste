@@ -13,8 +13,20 @@
   transition: transform 0.3s ease;
 }
 
+.card-grande{
+  height: 20rem;
+  width: 80vw;
+}
+
+.personagem-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+
 .container-card:hover {
-  border-color: var(--vermelho-celeste);
   transform: scale(1.1);
 }
 
@@ -24,8 +36,15 @@
 .nome-personagem {
   font-size: 24px;
   font-weight: 500;
+  margin-top: 1rem;
 }
 
 .Madeline {
   color: var(--vermelho-celeste);
+  border-color: var(--vermelho-celeste);
+}
+
+.Theo{
+  color: orange;
+  border-color: orange;
 }
