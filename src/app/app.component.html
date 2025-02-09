@@ -1,13 +1,6 @@
 @if (!usuarioLogado) {
-    <nav>
-      <a routerLink="/" routerLinkActive="active">Home</a>
-      <a routerLink="/about" routerLinkActive="active">About</a>
-      <a routerLink="/contact" routerLinkActive="active">Contact</a>
-      <a routerLink="/login" routerLinkActive="active">Login</a>
-    </nav>
-    <main>
-      <button (click)="login()">Fazer login</button>
-    </main>
+  <app-navbar/>
+  <router-outlet></router-outlet>
 }
 @else {
   <router-outlet></router-outlet>
